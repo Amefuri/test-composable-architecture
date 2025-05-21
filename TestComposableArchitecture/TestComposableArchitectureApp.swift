@@ -6,12 +6,22 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct TestComposableArchitectureApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//          let store = Store(initialState: .init(), reducer: {
+//            Feature()
+//          })
+//          ContentView(store: store)
+          
+          RestaurantMenuListView(
+            store: Store(initialState: .init(), reducer: {
+              RestaurantMenuList()
+            })
+          )
         }
     }
 }

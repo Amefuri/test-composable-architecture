@@ -1,0 +1,42 @@
+# macOS
+.DS_Store
+
+# Xcode
+build/
+DerivedData/
+*.xcworkspace
+xcuserdata/
+*.xccheckout
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/xcuserdata/
+
+# Swift Package Manager
+/.build
+/Packages
+Package.resolved
+
+# TCA / SPM
+.swiftpm
+
+# Logs
+*.log
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Bundle artifacts
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Personal settings
+*.xcuserstate
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+
+# Other
+.idea/
