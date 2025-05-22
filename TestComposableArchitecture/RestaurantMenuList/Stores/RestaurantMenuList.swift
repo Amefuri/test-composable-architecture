@@ -8,7 +8,8 @@
 import ComposableArchitecture
 import Foundation
 
-struct RestaurantMenuList: Reducer {
+@Reducer
+struct RestaurantMenuList {
   struct State: Equatable {
     var recentOrders: [MenuItem] = [
       .init(id: UUID(), name: "#ขายดี#ข้าวผัดปากน้ำโพ", price: 69, description: "description"),
@@ -34,12 +35,4 @@ struct RestaurantMenuList: Reducer {
       }
     }
   }
-}
-
-struct MenuItem: Equatable, Identifiable {
-  let id: UUID
-  let name: String
-  let price: Int
-  var originalPrice: Int?
-  let description: String
 }
